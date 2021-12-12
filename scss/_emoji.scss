@@ -1,0 +1,69 @@
+
+.contener {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.rowing {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+
+    @include media (1170px) {
+        grid-template-columns: 400px;
+        justify-content: center;
+        row-gap: 40px;
+    }
+    @include media(400px) {
+        padding: 0 5px;
+    }
+}
+
+.emoji__title {
+    font-family: $font-famaly-poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 112px;
+    color: #FFFFFF;
+    margin-top: 150px;
+    margin-bottom: 70px;
+
+    @include media(998px) {
+        font-size: 60px;
+    }
+    @include media(806px) {
+        font-size: 50px;
+    }
+    @include media(673px) {
+        font-size: 35px;
+    }
+    @include media(469px) {
+        font-size: 25px;
+    }
+
+}
+.emoji__item {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    margin-left: 25px;
+}
+.emoji__vans {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+.emoji__img {
+    width: 37px;
+    height: 37px;
+}
+.emoji__text {
+    font-family: $font-famaly-poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 33px;
+    color: #707070;
+    width: 443px;
+}

@@ -1,0 +1,68 @@
+.footering {
+    padding: 150px 0;
+}
+.footer__title {
+    font-family: $font-famaly-poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 150px;
+    color: #FFFFFF;
+
+    @include media(830px) {
+        font-size: 80px;
+    }
+    @include media(677px) {
+        font-size: 70px;
+    }
+    @include media(590px) {
+        font-size: 60px;
+    }
+    @include media(500px) {
+        font-size: 45px;
+    }
+    @include media(400px) {
+        font-size: 35px;
+    }
+}
+.footer__text {
+    font-family: $font-famaly-poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 43px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin-top: -20px;
+
+    @include media(590px) {
+        font-size: 60px;
+    }
+    @include media(500px) {
+        font-size: 45px;
+    }
+    @include media(400px) {
+        font-size: 35px;
+    }
+}
+.footer__btn {
+    padding: 29px 112px;
+    background: #326CF9;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    font-family: $font-famaly-poppins;
+
+    @include media(470px) {
+        padding: 15px 25px;
+    }
+}
+.footer__span {
+    font-size: 15px;
+}
+.footer__post-title {
+    column-gap: 5px;
+}

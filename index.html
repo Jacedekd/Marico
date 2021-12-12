@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marico</title>
+    <base href="./">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__logo-block">
+                        <img src="images/logo.png">
+                        <div class="nav__logo-name">Marico</div>
+                    </div>
+                    <div class="nav__navigationbuttons">
+                        <div class="nav__navigation">
+                            <ul class="nav__ul">
+                                <li class="nav__li dropdown">
+                                    <span class="nav__span lia">
+                                        Use Cases <span><img src="images/arrow.png" class=""></span>
+                                    </span>
+                                    <ul class="nav__ul-dropdown">
+                                        <li class="nav__li"><a class="lia" href="#">Servies</a></li>
+                                        <li class="nav__li"><a class="lia" href="#">Work</a></li>
+                                        <li class="nav__li"><a class="lia" href="#">Contact</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav__li"><a class="lia" href="#">
+                                        About
+                                    </a class="lia"></li>
+                                <li class="nav__li"><a class="lia" href="#">
+                                        Pricing
+                                    </a class="lia"></li>
+                                <li class="nav__li"><a class="lia" href="#">
+                                        Blog
+                                    </a class="lia"></li>
+                            </ul>
+                        </div>
+                        <div class="nav__buttons">
+                            <buttons class="nav__btn-1">Login</buttons>
+                            <buttons class="nav__btn-2" onclick="popupToggle();">Sign Up</buttons>
+                        </div>
+                    </div>
+
+                    <button class="hamburger hamburger--collapse" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </nav>
+                <div class="header__title-block">
+                    <div class="header__sub-title text-center">Own your audience.</div>
+                    <h1 class="header__title text-center mb-4">
+                        <span class="header__span-color">So you don't lose them.</span>
+                    </h1>
+                </div>
+                <div class="header__text-block">
+                    <div class="header__text text-center mb-5">Turn your audience into email and
+                        text message subscribers.</div>
+                    <div class="header__buttons mb-3">
+                        <button class="header__btn-1">Get Started Now</button>
+                        <button class="header__btn-2">View A Demo</button>
+                    </div>
+                    <div class="header__post-title">
+                        <div class="header__circle">
+                            <div class="header__circle2"></div>
+                        </div>
+                        <div class="header__post-text"> 1000+<span class="header__post-span"> creators have already
+                                started</span></div>
+                    </div>
+                </div>
+            </div>
+            <div id="popup">
+                <div class="content">
+                    <img src="images/email.png" alt="">
+                    <h2>Join Our Newsletter</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. In velit itaque veniam. Cupiditate corrupti illo ab necessitatibus.
+                    </p>
+                    <div class="input-box">
+                        <input type="email" placeholder="Enter email">
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" value="Sign Up">
+                    </div>
+                </div>
+                <a class="close" onclick="popupToggle();"><img src="images/cancel.png" alt=""></a>
+            </div>
+        </header>
+        <div class="emoji">
+            <div class="contener">
+                <div class="emoji__title text-center">Why Creators Love Marico</div>
+                <div class="rowing">
+                    <div class="coling">
+                        <div class="emoji__item">
+                            <img src="images/Smile_emoji.png" class="emoji__img">
+                            <div class="emoji__vans">Reduced Anxiety</div>
+                        </div>
+                        <div class="emoji__text">Never worry about losing your audience.</div>
+                    </div>
+                    <div class="coling">
+                        <div class="emoji__item ">
+                            <img src="images/Happy_emoji.png" class="emoji__img">
+                            <div class="emoji__vans">Lower Workload</div>
+                        </div>
+                        <div class="emoji__text">Just share one link. We'll handle the rest.</div>
+                    </div>
+                    <div class="coling">
+                        <div class="emoji__item">
+                            <img src="images/Party_emoji.png" class="emoji__img">
+                            <div class="emoji__vans">More Time</div>
+                        </div>
+                        <div class="emoji__text">Spend less time on marketing tools.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step-1">
+            <div class="step-1__step-1 text-center">STEP 1</div>
+            <div class="step-1__title text-center">Connect Your Content</div>
+            <div class="step-1__text text-center">Bring all of your content together and get a Homepage that <br>
+                automatically updates whenever you create anywhere online.</div>
+            <div class="step-1__button mt-4 text-center">
+                <button class="step-1__btn text-center">View Avaliable Sources</button>
+            </div>
+            <div class="row steping_1">
+                <div class="col-xl-6 c">
+                    <div class="step-1__item">
+                        <div class="step-1__item-subtitle">Your Homepage</div>
+                        <div class="step-1__item-title">Your Content.</div>
+                        <div class="step-1__item-title2 mb-3">All in <span>One Spot</span></div>
+                        <div class="step-1__item-block">
+                            <div class="step-1__item-one">1</div>
+                            <div class="step-1__item-two">Bring all of your content together into one homepage.</div>
+                        </div>
+                        <div class="step-1__item-block mt-3">
+                            <div class="step-1__item-one">2</div>
+                            <div class="step-1__item-two">Your page automatically updates whenever you create.</div>
+                        </div>
+                        <div class="step-1__item-buttons">
+                            <button class="step-1__item-btn-1">Get Started Now</button>
+                            <button class="step-1__item-btn-2">View A Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 img_step1">
+                    <img src="images/step-1.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="step-2">
+            <div class="step-1__step-1 text-center">STEP 2</div>
+            <div class="step-1__title text-center">Share Your Homepage</div>
+            <div class="step-1__text text-center mb-5">Share your Wavium homepage link with your followers, and <br>
+                we'll handle the rest.</div>
+            <div class="step-2__block mb-5">
+                    <div class="step-2__item  itemone vol">
+                        <img src="images/step-2-2.jpg" class="fot">
+                    </div>
+                <div class="step-2__item itemtwo lov">
+                    <img src="images/step-2_foto2.png" class="fot">
+                </div>
+            </div>
+            <div class="step-2__buttons text-center mb-5">
+                <a href="#" class="step-2__btn">Get Started </a>
+            </div>
+        </div>
+        <div class="step-1">
+            <div class="step-1__step-1 text-center">STEP-3</div>
+            <div class="step-1__title text-center">Send Emails & Text Messages</div>
+            <div class="step-1__text text-center">No more going through a social platform. Reach and engage
+                your audience directly over email and text massage.</div>
+            <div class="step-1__button mt-4 text-center">
+                <button class="step-1__btn text-center">View Avaliable Sources</button>
+            </div>
+            <div class="row steping_1">
+                <div class="col-xl-6 c">
+                    <div class="step-1__item">
+                        <div class="step-1__item-subtitle">Create & Share</div>
+                        <div class="step-1__item-title">Reach Your </div>
+                        <div class="step-1__item-title2 mb-3">Audio <span>Directly.</span></div>
+                        <div class="step-1__item-block">
+                            <div class="step-1__item-one">1</div>
+                            <div class="step-1__item-two">Embed content or create something new to share.</div>
+                        </div>
+                        <div class="step-1__item-block mt-3">
+                            <div class="step-1__item-one">2</div>
+                            <div class="step-1__item-two">Share content over email, text message or your homepage.</div>
+                        </div>
+                        <div class="step-1__item-buttons">
+                            <button class="step-1__item-btn-1">Get Started Now</button>
+                            <button class="step-1__item-btn-2">View A Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 img_step1">
+                    <img src="images/blackpink.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="Agree">
+            <div class="Experts text-center mb-5">Experts Agree</div>
+            <div class="expert__fotos img-fluid mb-5">
+                <img 
+                    srcset="
+                    images/expert.png 900w,
+                    images/expert-mobale.png 850w
+                    "
+                    src="images/expert.png" 
+                    class="expert__foto"
+                    >
+            </div>
+        </div>
+        <div class="people__block">
+            <h1 class="people__h1">We've helped over 1,000 creatorsre
+                claim control of their audience.</h1>
+        </div>
+        <div class="footering">
+            <div class="footer__block">
+                <div class="footer__logo text-center">
+                    <img src="images/footer_Logo (1).png" class="footer--logo">
+                </div>
+                <div class="footer__title text-center">Get Started Now</div>
+                <div class="footer__text text-center mb-3">Setup is easy and takes under 5 minutes.</div>
+                <div class="footer__buttons text-center">
+                    <button class="footer__btn mb-2">Get Started Now</button>
+                </div>
+                <div class="header__post-title footer__post-title">
+                    <div class="header__circle">
+                        <div class="header__circle2"></div>
+                    </div>
+                    <div class="header__post-text"> 1000+<span class="header__post-span"> creators have already
+                            started</span></div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="item_1">
+                            <div class="item_one">
+                                <img src="images/logo.png">
+                                <div class="title_product">Marico</div>
+                            </div>
+                            <div class="icons">
+                                <img src="images/facebook (2).svg" class="iii">
+                                <img src="./images/instagram.svg" alt="" class="iii">
+                                <img src="images/twitter.svg" alt="" class="iii">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-2">
+                        <div class="item_2">
+                            <ul class="item__ul">
+                                <li class="item__li mode">Resource</li>
+                                <li class="item__li">About Us</li>
+                                <li class="item__li">Blog</li>
+                                <li class="item__li"> Contact</li>
+                                <li class="item__li">FAQ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="item_3">
+                            <ul class="item__ul">
+                                <li class="item__li mode">Legal Stuff</li>
+                                <li class="item__li">Disclaimer</li>
+                                <li class="item__li">Financing</li>
+                                <li class="item__li">Privacy Policy</li>
+                                <li class="item__li">Terms of Service</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="item_4">
+                            <div class="item_4__title">Knowing you're always on the best energy deal.</div>
+                            <input class="form-control form-control-lg mt-4 mb-3" type="text"
+                                placeholder="Influence American elections..." aria-label=".form-control-lg example">
+                            <button class="item_4-btn">Sign up Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script>
+        let links = document.querySelectorAll('.dropdown');
+        links.forEach(item => {
+            item.addEventListener('click', function () {
+                this.children[1].classList.toggle('active');
+            });
+        })
+    </script>
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        var nav__navigationbuttons = document.querySelector(".nav__navigationbuttons");
+        // On click
+        hamburger.addEventListener("click", function () {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            nav__navigationbuttons.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
+    </script>
+    <script>
+        function popupToggle(){
+            const popup = document.getElementById('popup')
+            popup.classList.toggle('actives')
+        }
+    </script>
+</body>
+
+</html>

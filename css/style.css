@@ -1125,6 +1125,7 @@ body {
 }
 
 .nav__btn-2:hover {
+  transform: scale(90%);
   transition: 0.5s;
 }
 

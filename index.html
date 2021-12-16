@@ -31,9 +31,9 @@
                                         Use Cases <span><img src="images/arrow.png" class=""></span>
                                     </span>
                                     <ul class="nav__ul-dropdown">
-                                        <li class="nav__li"><a class="lia" href="#">Servies</a></li>
-                                        <li class="nav__li"><a class="lia" href="#">Work</a></li>
-                                        <li class="nav__li"><a class="lia" href="#">Contact</a></li>
+                                        <li class="nav__li"><a class="lia islam" href="#">Servies</a></li>
+                                        <li class="nav__li"><a class="lia islam" href="#">Work</a></li>
+                                        <li class="nav__li"><a class="lia islam" href="#">Contact</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav__li"><a class="lia" href="#">
@@ -317,13 +317,17 @@
             // Toggle class "is-active"
             hamburger.classList.toggle("is-active");
             nav__navigationbuttons.classList.toggle("is-active");
-            // Do something else, like open/close menu
+            document.body.classList.toggle('fixed')
+            // Do something else, like open/close menu 
         });
     </script>
     <script>
         function popupToggle(){
             const popup = document.getElementById('popup')
             popup.classList.toggle('actives')
+            if(!nav__navigationbuttons.classList.contains('is-active')) {
+                document.body.classList.add('fixed')
+            }
         }
     </script>
 </body>

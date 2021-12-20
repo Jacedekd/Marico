@@ -26,6 +26,9 @@
     background: #326CF9;
     border-radius: 10px;
 }
+.step-2__btn:hover {
+    color: #fff;
+}
 .vol {
     margin-left: 15px;
     @include media(750px) {

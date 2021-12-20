@@ -1,12 +1,12 @@
 .footering {
-    padding: 150px 0;
+    padding: 9.375rem 0;
 }
 .footer__title {
     font-family: $font-famaly-poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: 100px;
-    line-height: 150px;
+    font-size: 6.25rem;
+    line-height: 9.375rem;
     color: #FFFFFF;
 
     @include media(830px) {
@@ -29,8 +29,8 @@
     font-family: $font-famaly-poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 43px;
-    line-height: 64px;
+    font-size: 2.6875rem;
+    line-height: 4rem;
     color: #FFFFFF;
     margin-top: -20px;
 
@@ -55,14 +55,20 @@
     font-size: 30px;
     line-height: 45px;
     font-family: $font-famaly-poppins;
+    transition: .5s;
 
     @include media(470px) {
         padding: 15px 25px;
     }
 }
+.footer__btn:hover {
+    transition: .5s;
+    letter-spacing: 4px;
+    border-radius: 5px;
+}
 .footer__span {
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 .footer__post-title {
-    column-gap: 5px;
+    column-gap: 0.3125rem;
 }

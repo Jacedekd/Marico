@@ -24,10 +24,10 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 1000;
-    background: rgb(201, 194, 194);
+    background: #0a0a0a;
     max-width: 450px;
     padding: 80px 50px 50px;
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: -10px 10px 30px rgba(255, 255, 255, 0.466);
     transition: .5s;
     visibility: hidden;
     border-radius: 10px;
@@ -51,13 +51,13 @@ body {
 #popup .content h2 {
     font-size: 24px;
     font-weight: 500;
-    color: #000;
+    color: #fff;
     margin: 20px 0 10px 0;
 }
 #popup .content p {
     text-align: center;
     font-style: 16px;
-    color: #000;
+    color: #fff;
 }
 #popup .content .input-box {
     position: relative;
@@ -74,6 +74,7 @@ body {
     outline: none;
     font-size: 18px;
     border-radius: 10px;
+    
 }
 #popup .content .input-box input[type="submit"] {
     max-width: 150px;
@@ -99,7 +100,7 @@ body {
 .nav {
     display: flex;
     align-items: center;
-    padding: 25px 0 90px 0;
+    padding: 1.5625rem 0 5.625rem 0;
 }
 
 .nav__logo-block {
@@ -111,7 +112,7 @@ body {
 .nav__navigation {
     display: flex;
     margin-right: auto;
-    column-gap: 40px;
+    column-gap: 2.5rem;
 
     @include media(992px) {
         margin-right: 0;
@@ -124,7 +125,7 @@ body {
 
     @include media(992px) {
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 1.25rem;
     }
 }
 .nav__navigationbuttons {
@@ -136,7 +137,7 @@ body {
         right: 0;
         width: 100%;
         height: 100%;
-        background: rgba(19, 228, 210, 0.849);
+        background: linear-gradient(to right, #FE6783, #FFBF84);
         flex-direction: column;
         justify-content: start;
         padding-top: 200px;
@@ -249,10 +250,16 @@ body {
     font-size: 20px;
     line-height: 30px;
     color: #707070;
-    padding: 12px 22px;
+    padding: 0.75rem 1.375rem;
     border-radius: 7px;
     border: 1px solid #fff;
     cursor: pointer;
+}
+.nav__btn-1:hover {
+    color: #000;
+    background-color: #fff;
+    transition: .5s;
+    border-radius: 5px;
 }
 .nav__btn-2 {
     
@@ -261,15 +268,17 @@ body {
     font-size: 20px;
     line-height: 30px;
     color: #FFFFFF;
-    padding: 12px 22px;
+    padding: 0.75rem 1.375rem;
     background: #306EF7;
     border-radius: 7px;
     cursor: pointer;
     transition: .5s;
 }
 .nav__btn-2:hover {
-    transform: scale(90%);
+    color: #306EF7;
+    background-color: #fff;
     transition: .5s;
+    border-radius: 5px;
 }
 
 .header__title-block {
@@ -282,9 +291,10 @@ body {
     font-family: $font-famaly-poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: 85px;
-    line-height: 168px;
+    font-size: 5.3125rem;
+    line-height: 10.5rem;
     color: #FFFFFF;
+    cursor: pointer;
 
     @include media(1199px) {
         font-size: 70px;
@@ -306,9 +316,10 @@ body {
     font-family: $font-famaly-poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: 85px;
-    line-height: 168px;
+    font-size: 5.3125rem;
+    line-height: 10.5rem;
     margin-top: -65px;
+    cursor: pointer;
 
     @include media(1199px) {
         font-size: 70px;
@@ -337,6 +348,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-size: 500% 500%;
     animation: gradient 10s ease infinite; 
+    cursor: pointer;
 }
 @keyframes gradient {
     0% {
@@ -357,7 +369,7 @@ body {
     font-family: $font-famaly-poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 1;
     color: #FFFFFF;
 
@@ -379,11 +391,18 @@ body {
         row-gap: 20px;
     }
 }
+.button {
+    display: inline-block;
+    padding: 1em;
+    background-color: #79BD9A;
+    text-decoration: none;
+    color: white;
+}
 .header__btn-1 {
     font-family: $font-famaly-poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 30px;
     color: #FFFFFF;
     padding: 23px 80px;
@@ -394,14 +413,15 @@ body {
 .header__btn-2 {
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
     color: #707070;
     border-radius: 15px;
     padding: 23px 80px;
     background: #000;
     border-color: 1px #fff;
 }
+
 .header__post-title {
     max-width: 500px;
     margin: 0 auto;
@@ -430,19 +450,19 @@ body {
     font-family: $font-famaly-poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5625rem;
     line-height: 38px;
     color: #FFFFFF;
 
     @include media (516px) {
-        font-size: 15px;
+        font-size: 0.9375rem;
     }
 }
 .header__post-span {
     font-family: $font-famaly-poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 1.5625rem;
     text-align: center;
     color: #707070;
 

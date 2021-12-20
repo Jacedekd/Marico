@@ -51,7 +51,7 @@
 .step-1__btn {
     color: #707070;
     margin: 0 auto;
-    padding: 17px 60px;
+    padding: 1.0625rem 3.75rem;
     background: #000;
     border-radius: 10px;
     border-color: #fff;
@@ -126,7 +126,7 @@
     padding: 18px 22px;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 30px;
     color: #FFFFFF;
     background: #326CF9;
@@ -139,8 +139,8 @@
     padding: 18px 22px;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
     color: #707070;
     border-radius: 10px;
     border-color: 1px solid rgba(255, 255, 255, 0.74);
@@ -152,12 +152,12 @@
 }
 .step-1__item-title, .step-1__item-title2 {
     @include media(605px) {
-        font-size: 50px;
-        line-height: 70px;
+        font-size: 3.125rem;
+        line-height: 4.375rem;
     }
     @include media(420px) {
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 1.875rem;
+        line-height: 3.125rem;
     }
 }
 .img_step1 {
@@ -169,7 +169,7 @@
     font-family: $font-famaly-poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: 75px;
+    font-size: 4.6875rem;
     line-height: 112px;
     color: #FFFFFF;
 
@@ -182,7 +182,7 @@
 }
 .expert__fotos {
     height: 400px;
-    padding: 0 20px 100px 20px;
+    padding: 0 1.25rem 6.25rem 1.25rem;
 }
 .expert__foto {
     width: 100%;

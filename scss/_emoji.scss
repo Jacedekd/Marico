@@ -21,8 +21,8 @@
     font-family: $font-famaly-poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: 75px;
-    line-height: 112px;
+    font-size: 4.6875rem;
+    line-height: 7rem;
     color: #FFFFFF;
     margin-top: 150px;
     margin-bottom: 70px;
@@ -50,7 +50,7 @@
 .emoji__vans {
     font-style: normal;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 2.1875rem;
     line-height: 52px;
     color: #FFFFFF;
 }
@@ -62,8 +62,8 @@
     font-family: $font-famaly-poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 33px;
+    font-size: 1.125rem;
+    line-height: 2.0625rem;
     color: #707070;
     width: 443px;
     @include media(407px) {

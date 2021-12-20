@@ -1716,6 +1716,23 @@ body {
   color: #FFFFFF;
 }
 
+.blackpinki {
+  animation: blackpinki 1.5s linear infinite alternate;
+}
+@media screen and (max-width: 1199px) {
+  .blackpinki {
+    margin-top: 10px;
+  }
+}
+
+@keyframes blackpinki {
+  0% {
+    box-shadow: -20px 20px 20px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: -20px 20px 20px rgba(255, 255, 255, 0);
+  }
+}
 .step-2__block {
   display: flex;
   justify-content: center;
@@ -1879,6 +1896,7 @@ body {
   font-size: 37px;
   line-height: 56px;
   color: #fff;
+  cursor: pointer;
 }
 
 .item__ul {
@@ -1900,6 +1918,7 @@ body {
 .item__li {
   margin-right: auto;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .item_4__title {

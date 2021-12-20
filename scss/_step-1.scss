@@ -207,6 +207,26 @@
     line-height: 105px;
     text-align: center;
     color: #FFFFFF;
-
-
 }
+.blackpinki {
+    
+    animation: blackpinki 1.5s linear infinite alternate;
+    // animation-name: blackpinki;
+    // animation-duration: 1.5s;
+    // animation-timing-function: linear;
+    // animation-iteration-count: infinite;
+    // animation-direction: alternate;
+    
+    @include media(1199px) {
+        margin-top: 10px;
+    }
+}
+@keyframes blackpinki{
+    0% {
+        box-shadow: -20px 20px 20px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        box-shadow: -20px 20px 20px rgba(255, 255, 255, 0);
+    }
+}
+// box-shadow: -20px 20px 20px rgba(255, 255, 255, 0.3);

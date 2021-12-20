@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marico</title>
     <base href="./">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -19,14 +20,14 @@
         <header class="header">
             <div class="container">
                 <nav class="nav">
-                    <div class="nav__logo-block">
+                    <div class="nav__logo-block animate__animated animate__backInLeft">
                         <img src="images/logo.png">
                         <div class="nav__logo-name">Marico</div>
                     </div>
                     <div class="nav__navigationbuttons">
                         <div class="nav__navigation">
                             <ul class="nav__ul">
-                                <li class="nav__li dropdown">
+                                <li class="nav__li animate__animated animate__backInDown dropdown">
                                     <span class="nav__span lia">
                                         Use Cases <span><img src="images/arrow.png" class=""></span>
                                     </span>
@@ -36,18 +37,18 @@
                                         <li class="nav__li"><a class="lia islam" href="#">Contact</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav__li"><a class="lia" href="#">
+                                <li class="nav__li animate__animated animate__backInDown"><a class="lia" href="#">
                                         About
                                     </a class="lia"></li>
-                                <li class="nav__li"><a class="lia" href="#">
+                                <li class="nav__li animate__animated animate__backInDown"><a class="lia" href="#">
                                         Pricing
                                     </a class="lia"></li>
-                                <li class="nav__li"><a class="lia" href="#">
+                                <li class="nav__li animate__animated animate__backInDown"><a class="lia" href="#">
                                         Blog
                                     </a class="lia"></li>
                             </ul>
                         </div>
-                        <div class="nav__buttons">
+                        <div class="nav__buttons animate__animated animate__backInRight">
                             <buttons class="nav__btn-1">Login</buttons>
                             <buttons class="nav__btn-2" onclick="popupToggle();">Sign Up</buttons>
                         </div>
@@ -60,13 +61,15 @@
                     </button>
                 </nav>
                 <div class="header__title-block">
-                    <div class="header__sub-title animate__animated animate__bounceInLeft text-center">Own your audience.</div>
+                    <div class="header__sub-title animate__animated animate__bounceInLeft text-center">Own your
+                        audience.</div>
                     <h1 class="header__title animate__animated animate__bounceInRight text-center mb-4">
                         <span class="header__span-color">So you don't lose them.</span>
                     </h1>
                 </div>
                 <div class="header__text-block">
-                    <div class="header__text text-center mb-5">Turn your audience into email and
+                    <div class="header__text text-center mb-5 animate__animated animate__bounce">Turn your audience into
+                        email and
                         text message subscribers.</div>
                     <div class="header__buttons mb-3">
                         <button class="header__btn-1">Get Started Now</button>
@@ -86,7 +89,8 @@
                     <img src="images/email.png" alt="">
                     <h2>Join Our Newsletter</h2>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. In velit itaque veniam. Cupiditate corrupti illo ab necessitatibus.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. In velit itaque veniam. Cupiditate
+                        corrupti illo ab necessitatibus.
                     </p>
                     <div class="input-box">
                         <input type="email" placeholder="Enter email">
@@ -137,25 +141,31 @@
             <div class="row steping_1">
                 <div class="col-xl-6 c">
                     <div class="step-1__item">
-                        <div class="step-1__item-subtitle">Your Homepage</div>
-                        <div class="step-1__item-title">Your Content.</div>
-                        <div class="step-1__item-title2 mb-3">All in <span>One Spot</span></div>
-                        <div class="step-1__item-block">
-                            <div class="step-1__item-one">1</div>
-                            <div class="step-1__item-two">Bring all of your content together into one homepage.</div>
-                        </div>
-                        <div class="step-1__item-block mt-3">
-                            <div class="step-1__item-one">2</div>
-                            <div class="step-1__item-two">Your page automatically updates whenever you create.</div>
-                        </div>
-                        <div class="step-1__item-buttons">
-                            <button class="step-1__item-btn-1">Get Started Now</button>
-                            <button class="step-1__item-btn-2">View A Demo</button>
+                        <div data-aos="fade-right">
+                            <div class="step-1__item-subtitle">Your Homepage</div>
+                            <div class="step-1__item-title">Your Content.</div>
+                            <div class="step-1__item-title2 mb-3">All in <span>One Spot</span></div>
+                            <div class="step-1__item-block">
+                                <div class="step-1__item-one">1</div>
+                                <div class="step-1__item-two">Bring all of your content together into one homepage.
+                                </div>
+                            </div>
+                            <div class="step-1__item-block mt-3">
+                                <div class="step-1__item-one">2</div>
+                                <div class="step-1__item-two">Your page automatically updates whenever you create.</div>
+                            </div>
+                            <div class="step-1__item-buttons">
+                                <button class="step-1__item-btn-1">Get Started Now</button>
+                                <button class="step-1__item-btn-2">View A Demo</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-xl-6 img_step1">
-                    <img src="images/step-1.png" class="img-fluid">
+                    <div data-aos="fade-left">
+                        <img src="images/step-1.png" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
@@ -165,9 +175,9 @@
             <div class="step-1__text text-center mb-5">Share your Wavium homepage link with your followers, and <br>
                 we'll handle the rest.</div>
             <div class="step-2__block mb-5">
-                    <div class="step-2__item  itemone vol">
-                        <img src="images/step-2-2.jpg" class="fot">
-                    </div>
+                <div class="step-2__item  itemone vol">
+                    <img src="images/step-2-2.jpg" class="fot">
+                </div>
                 <div class="step-2__item itemtwo lov">
                     <img src="images/step-2_foto2.png" class="fot">
                 </div>
@@ -212,14 +222,10 @@
         <div class="Agree">
             <div class="Experts text-center mb-5">Experts Agree</div>
             <div class="expert__fotos img-fluid mb-5">
-                <img 
-                    srcset="
+                <img srcset="
                     images/expert.png 900w,
                     images/expert-mobale.png 850w
-                    "
-                    src="images/expert.png" 
-                    class="expert__foto"
-                    >
+                    " src="images/expert.png" class="expert__foto">
             </div>
         </div>
         <div class="people__block">
@@ -297,7 +303,7 @@
     </div>
 
 
-
+    <!-- //////////////////////////////////////JavaScript///////////////////////////////////////////////////////////// -->
 
     <script src="./js/bootstrap.bundle.js"></script>
     <script>
@@ -322,15 +328,19 @@
         });
     </script>
     <script>
-        function popupToggle(){
+        function popupToggle() {
             const popup = document.getElementById('popup')
             popup.classList.toggle('actives')
-            if(!nav__navigationbuttons.classList.contains('is-active')) {
+            if (!nav__navigationbuttons.classList.contains('is-active')) {
                 document.body.classList.add('fixed')
             }
         }
     </script>
-    <script type="text/javascript" src="https://spikmi.com/Widget?Id=7006"></script>
+    <!-- <script type="text/javascript" src="https://spikmi.com/Widget?Id=7006"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

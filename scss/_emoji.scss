@@ -66,4 +66,7 @@
     line-height: 33px;
     color: #707070;
     width: 443px;
+    @include media(407px) {
+        padding: 0 0 0 20px;
+    }
 }

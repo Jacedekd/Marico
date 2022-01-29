@@ -866,6 +866,18 @@ body {
   position: relative;
 }
 
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background: #202324;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #454a4d;
+}
+
 #popup {
   position: absolute;
   top: -100%;
@@ -1131,12 +1143,13 @@ body {
   border-radius: 7px;
   border: 1px solid #fff;
   cursor: pointer;
+  border-color: #303436;
+  transition: 0.8s;
 }
 
 .nav__btn-1:hover {
-  color: #000;
-  background-color: #fff;
-  transition: 0.5s;
+  color: #fff;
+  background-color: #7070705b;
   border-radius: 5px;
 }
 
@@ -1147,16 +1160,15 @@ body {
   line-height: 30px;
   color: #FFFFFF;
   padding: 0.75rem 1.375rem;
-  background: #306EF7;
+  background-color: #073bad;
   border-radius: 7px;
   cursor: pointer;
   transition: 0.5s;
 }
 
 .nav__btn-2:hover {
-  color: #306EF7;
-  background-color: #fff;
-  transition: 0.5s;
+  background: rgba(43, 43, 43, 0.658);
+  color: #073bad;
   border-radius: 5px;
 }
 
@@ -1172,7 +1184,7 @@ body {
   font-weight: bold;
   font-size: 5.3125rem;
   line-height: 10.5rem;
-  color: #FFFFFF;
+  color: #e8e6e3;
   cursor: pointer;
 }
 @media screen and (max-width: 1199px) {
@@ -1241,7 +1253,7 @@ body {
 
 .header__span-color {
   color: #FE6783;
-  background: linear-gradient(to right, #FE6783, #FFBF84);
+  background: linear-gradient(to right, #8e011b, #7d3c00);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1272,7 +1284,7 @@ body {
   font-weight: 500;
   font-size: 2.5rem;
   line-height: 1;
-  color: #FFFFFF;
+  color: #e8e6e3;
 }
 @media screen and (max-width: 768px) {
   .header__text {
@@ -1303,7 +1315,7 @@ body {
   padding: 1em;
   background-color: #79BD9A;
   text-decoration: none;
-  color: white;
+  color: #e8e6e3;
 }
 
 .header__btn-1 {
@@ -1314,7 +1326,7 @@ body {
   line-height: 30px;
   color: #FFFFFF;
   padding: 23px 80px;
-  background: #326CF9;
+  background: #073bad;
   border-radius: 15px;
   border: none;
 }
@@ -1363,7 +1375,7 @@ body {
   font-weight: bold;
   font-size: 1.5625rem;
   line-height: 38px;
-  color: #FFFFFF;
+  color: #e8e6e3;
 }
 @media screen and (max-width: 516px) {
   .header__post-text {
@@ -1493,7 +1505,7 @@ body {
   font-weight: 600;
   font-size: 25px;
   line-height: 38px;
-  color: #3D82F2;
+  color: #073bad;
 }
 
 .step-1__title {
@@ -1586,7 +1598,7 @@ body {
 }
 
 .step-1__item-title2 span {
-  color: #3C82F4;
+  color: #073bad;
 }
 
 .step-1__item-block {
@@ -1641,7 +1653,7 @@ body {
   font-size: 1.25rem;
   line-height: 30px;
   color: #FFFFFF;
-  background: #326CF9;
+  background: #073bad;
   border-radius: 10px;
   border: none;
 }
@@ -1779,7 +1791,7 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   padding: 22px 81px;
-  background: #326CF9;
+  background: #073bad;
   border-radius: 10px;
 }
 
@@ -1878,7 +1890,7 @@ body {
 
 .footer__btn {
   padding: 29px 112px;
-  background: #326CF9;
+  background: #073bad;
   border: none;
   border-radius: 10px;
   color: #fff;
@@ -1914,6 +1926,11 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.671);
   padding-bottom: 50px;
 }
+.form-control {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.24);
+}
+
 .item_one {
   display: flex;
   align-items: center;
@@ -1969,7 +1986,7 @@ body {
   line-height: 1.5rem;
   text-align: center;
   color: #FFFFFF;
-  background: #326CF9;
+  background: #073bad;
   border-radius: 0.25rem;
   padding: 0.5rem 0.9375rem;
   border: none;

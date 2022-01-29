@@ -6,6 +6,10 @@
 
     }
 }
+.form-control {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.24);
+}
 .item_one {
     display: flex;
     align-items: center;
@@ -55,7 +59,7 @@
     line-height: 1.5rem;
     text-align: center;
     color: #FFFFFF;
-    background: #326CF9;
+    background: rgb(7, 59, 173);
     border-radius: 0.25rem;
     padding: 0.5rem 0.9375rem;
     border: none;
